@@ -155,7 +155,7 @@ document.getElementById('withdrawForm')?.addEventListener('submit', async functi
     if (!user) { window.location.href = 'login.html'; return; }
 
     // ==== METS TA CLÉ NOTCHPAY ICI ====
-    const NOTCHPAY_PUBLIC_KEY = 'pk_test_...';
+    const NOTCHPAY_PUBLIC_KEY =pk_test.fhXnluR6sJ78nHHaPHqVEMkIMVLku6v1oyh6laiUv1fUOFesUA7J7d6mZvZoQ1OLNfIQg3Pb9s5gXyd0KU16pPyMoxhoLmrcCAH4X3ysYQEYa65cMrDcnx9S1E4fE;
     
     const method = document.getElementById('paymentMethod').value;
     const phone = document.getElementById('phoneNumber').value;
