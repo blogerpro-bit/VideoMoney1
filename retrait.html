@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrait - VidéoMoney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>🎬 VidéoMoney</h1>
+        <a href="dashboard.html" class="btn">Tableau de bord</a>
+    </nav>
+    <main>
+        <h2>Retirer mes gains</h2>
+        <p>Solde disponible : <strong id="withdrawBalance">0 XAF</strong></p>
+        <form id="withdrawForm">
+            <label>Méthode de retrait</label>
+            <select id="paymentMethod" required>
+                <option value="">Choisir...</option>
+                <option value="cm.orange">Orange Money</option>
+                <option value="cm.mtn">MTN Mobile Money</option>
+            </select>
+            <input type="tel" id="phoneNumber" placeholder="Numéro (ex: 691234567)" required>
+            <input type="number" id="withdrawAmount" placeholder="Montant (min: 500 XAF)" min="500" required>
+            <input type="text" id="fullName" placeholder="Nom complet sur le compte" required>
+            <button type="submit">Retirer</button>
+        </form>
+        <div id="paymentStatus"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

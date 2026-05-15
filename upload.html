@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader - VidéoMoney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>🎬 VidéoMoney</h1>
+        <a href="dashboard.html" class="btn">Tableau de bord</a>
+    </nav>
+    <main>
+        <h2>Uploader une vidéo</h2>
+        <form id="uploadForm">
+            <input type="text" id="videoTitle" placeholder="Titre de la vidéo" required>
+            <div id="dropZone" style="border: 2px dashed #2a2a3a; border-radius: 12px; padding: 40px; text-align: center; cursor: pointer;">
+                <p>Glisse ta vidéo ici ou clique pour sélectionner</p>
+                <input type="file" id="videoFile" accept="video/*" style="display: none;">
+            </div>
+            <button type="submit">Publier la vidéo</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
